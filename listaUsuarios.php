@@ -20,7 +20,7 @@ function excluirUsuario($conn, $id) {
     if ($conn->query($sql) === TRUE) {
         echo "Usuário excluído com sucesso!";
         // Redireciona de volta para a página de lista de usuários após a exclusão
-        header("Location: admsystem5370.php");
+        header("Location: Adm.php");
         exit();
     } else {
         echo "Erro ao excluir usuário: " . $conn->error;
