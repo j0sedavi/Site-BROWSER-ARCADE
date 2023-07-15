@@ -17,7 +17,7 @@ function atualizarUsuario($conn, $id, $nome, $emblemas, $conquistas) {
     $sql = "UPDATE Contas SET Nome = '$nome', Emblemas = '$emblemas', Conquistas = '$conquistas' WHERE Id = '$id'";
     if ($conn->query($sql) === TRUE) {
         echo "Usuário atualizado com sucesso!";
-        header("Location: admsystem5370.php");
+        header("Location: Adm.php");
         exit();
     } else {
         echo "Erro ao atualizar usuário: " . $conn->error;
